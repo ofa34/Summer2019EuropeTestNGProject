@@ -26,6 +26,7 @@ public class VerifyURLnotchanged {
         //save url to string variable
         String expectedUrl = driver.getCurrentUrl();
 
+
         //click on Retrieve password
         WebElement retrivePasswordButton = driver.findElement(By.id("form_submit"));
         retrivePasswordButton.click();
