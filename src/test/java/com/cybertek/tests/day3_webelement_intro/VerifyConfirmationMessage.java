@@ -15,6 +15,7 @@ public class VerifyConfirmationMessage {
      * click on Retrieve password
      * verify that confirmation message says 'Your e-mail's been sent!'
      */
+
     public static void main(String[] args) throws InterruptedException {
         //open browser
         WebDriver driver = WebDriverFactory.getDriver("chrome");
@@ -49,6 +50,7 @@ public class VerifyConfirmationMessage {
         if (expectedMessage.equals(actualMessage)) {
             System.out.println("PASS");
         } else {
+
             System.out.println("FAIL");
             System.out.println("expectedMessage = " + expectedMessage);
             System.out.println("actualMessage = " + actualMessage);
