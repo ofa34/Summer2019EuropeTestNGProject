@@ -50,7 +50,6 @@ public class VerifyConfirmationMessage {
         if (expectedMessage.equals(actualMessage)) {
             System.out.println("PASS");
         } else {
-
             System.out.println("FAIL");
             System.out.println("expectedMessage = " + expectedMessage);
             System.out.println("actualMessage = " + actualMessage);
