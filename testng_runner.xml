@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Vytrack autonatşon" verbose="1">
+    <test name="Vytrack smoke tests">
+        <packages>
+            <package name="com.cybertek.tests.day14_pom_tests"></package>
+            <package name="com.cybertek.tests.day16_review"></package>
+        </packages>
+        <classes>
+            <class name="com.cybertek.tests.day14_pom_tests.NegativeLoginTests">
+                <methods>
+                    <include name="wrongUsername"></include>
+                </methods>
+            </class>
+
+            <class name="com.cybertek.tests.day16_review.verifyContactInfoTests">
+                <methods>
+                    <exclude name="contactDetailsTest"></exclude>
+                </methods>
+            </class>
+
+        </classes>
+
+    </test>
+</suite>

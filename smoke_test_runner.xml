@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Vytrack Smoke Suite">
+    <test name="Smoke test">
+        <packages>
+            <package name="com.cybertek.tests.day16_review"></package>
+            <package name="com.cybertek.tests.day15_pom_tests"></package>
+        </packages>
+        <classes>
+            <class name="com.cybertek.tests.day14_pom_tests.PositiveLoginTests"/>
+            <class name="com.cybertek.tests.day14_pom_tests.NegativeLoginTests"></class>
+        </classes>
+    </test>
+</suite>
